@@ -1,0 +1,118 @@
+/* AddUsersStyles.css */
+
+/* Common styles for all screens */
+.container {
+    max-width: 1000px; /* Adjust the max-width for laptop screens */
+    margin: 15px auto;
+    padding: 20px;
+    background-color: rgb(232, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-heading {
+    background-color: rgb(235, 216, 216);
+    font-size: 36px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-button {
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  .checkbox-input {
+    width: 50px;
+    height: 30px;
+    margin-top: 12px;
+    margin-right: 12px;
+  }
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .todo-item.completed .todo-title {
+    text-decoration: line-through;
+    color: #777;
+  }
+  
+  .todo-title {
+    flex: 1;
+    font-size: 18px;
+  }
+  
+  .checkbox-label {
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    padding: 15px 15px;
+    background-color: #43b4e4;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Media query for mobile screens */
+  @media screen and (max-width: 480px) {
+    .container {
+      max-width: 100%; /* Adjust the max-width for mobile screens */
+    }
+    .todo-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-right: 15px;
+      }
+    .container-heading {
+      font-size: 24px;
+    }
+  
+    .todo-input {
+      font-size: 14px;
+      width:25%;
+    }
+  
+    .add-button {
+      font-size: 14px;
+    }
+  
+    .todo-title {
+      font-size: 16px;
+    }
+  
+    .delete-button {
+      font-size: 12px;
+    }
+  }
+  

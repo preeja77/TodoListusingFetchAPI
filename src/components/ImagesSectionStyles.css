@@ -1,0 +1,54 @@
+/* ImagesSectionStyles.css */
+
+/* Default styles for large screens (laptop) */
+.todoList-section {
+    background-color: rgb(232, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .image1 {
+    width: 405px;
+    height: 30vh;
+    margin: 5px;
+    border-radius: 15px;
+  }
+  
+  .list {
+    font-family: "Roboto";
+    text-align: center; /* Center text on large screens */
+  }
+  
+  .list-items {
+    font-size: 40px;
+    line-height: 1.2; /* Adjust line height for readability */
+  }
+  
+  .list-item {
+    font-size: 25px;
+  }
+  
+  /* Media query for mobile screens */
+  @media screen and (max-width: 768px) {
+    .todoList-section {
+      height: auto; /* Remove height restriction for mobile screens */
+    }
+  
+    .image1 {
+      width: 50%; /* Make the image take up the full width on mobile */
+      height: auto; /* Maintain aspect ratio */
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
+  
+    .list-items {
+      font-size: 24px; /* Reduce font size for mobile */
+    }
+  
+    .list-item {
+      font-size: 18px; /* Reduce font size for mobile */
+    }
+  }
+  
